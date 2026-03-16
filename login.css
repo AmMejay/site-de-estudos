@@ -6,7 +6,7 @@
 
 body {
   background: linear-gradient(to right, #ffa1a1, #ff7c30);
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .alincont {
@@ -56,14 +56,17 @@ button {
   color: rgb(255, 255, 255);
   cursor: pointer;
   font-size: 20px;
-  
 }
 
 u {
   color: blue;
 }
 
-.ng {
+.cadastro {
   text-align: center;
 }
 
+#erro {
+  display: none;
+  text-align: center;
+}
