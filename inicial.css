@@ -8,7 +8,7 @@ body {
   background: linear-gradient(to right, #ffa1a1, #ff7c30);
   font-family: 'Ubuntu', sans-serif;
   background: url(image/ondas.jpg);
-  background-size: 100% 70%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
@@ -26,10 +26,6 @@ body {
 
 h1 {
   color: rgb(255, 255, 255);
-}
-
-.cortitulo {
-  color: blue;
 }
 
 p {
@@ -69,5 +65,36 @@ button:hover {
 .segundaparte {
   display: flex;
   justify-content: center;
-  color: rgb(255, 0, 0);
+  color: rgb(0, 4, 255);
+  font-size: 40px;
+  margin-bottom: 130px;
+}
+
+.quadrodasmaterias {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  border: 2px solid black;
+  transition: 0.5s;
+}
+
+.quadrodasmaterias:hover {
+  background-color: rgb(252, 183, 54);
+  color: white;
+}
+
+.contdasmaterias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+}
+
+.terceiraparte {
+  display: flex;
 }
