@@ -1,5 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
   const botaoLogin = document.getElementById('bot')
+  const botaoEntrarSemLogin = document.getElementById('bot2')
+
+  botaoEntrarSemLogin.addEventListener('click', e => {
+    e.preventDefault()
+    window.location.href = 'inicial.html'
+  })
 
   botaoLogin.addEventListener('click', e => {
     e.preventDefault()
@@ -7,12 +13,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const nome = document.getElementById('nm').value
     const senha = document.getElementById('sn').value
 
-    if (nome === 'eduardogay' && senha === 'eduardogay150') {
+    if (
+      (nome === 'eduardogay123' && senha === 'eduardogay123') ||
+      (nome === 'admin' && senha === 'admin')
+    ) {
       window.location.href = 'inicial.html'
-    } else if (nome === 'admin' && senha === 'admin') {
-      window.location.href = 'inicial.html'
+      localStorage.setItem('usuario_logado', true)
     } else {
       document.getElementById('erro').style.display = 'block'
+      localStorage.setItem('usuario_logado', false)
     }
   })
 })
