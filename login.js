@@ -18,10 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
       (nome === 'admin' && senha === 'admin')
     ) {
       window.location.href = 'inicial.html'
-      localStorage.setItem('usuario_logado', true)
     } else {
       document.getElementById('erro').style.display = 'block'
-      localStorage.setItem('usuario_logado', false)
     }
   })
 })
