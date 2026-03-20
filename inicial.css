@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #ffa1a1, #ff7c30);
+  font-family: 'Ubuntu', sans-serif;
+  background: url(image/ondas.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.alincont1 {
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  flex-direction: column;
+  height: 30vh;
+}
+
+.primeirareparticao {
+  background: url(image/estudar.jpg);
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+}
+
+p {
+  color: rgb(255, 255, 255);
+}
+
+a {
+  color: aliceblue;
+  font-size: 20px;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  background: transparent;
+  border: 2px solid aliceblue;
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+  cursor: pointer;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+#botalin {
+  display: flex;
+  justify-content: center;
+}
+
+.segundaparte {
+  display: flex;
+  justify-content: center;
+  color: rgb(0, 4, 255);
+  font-size: 40px;
+  margin-bottom: 130px;
+}
+
+.quadrodasmaterias {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  border: 2px solid black;
+  transition: 0.5s;
+}
+
+.quadrodasmaterias:hover {
+  background-color: rgb(252, 183, 54);
+  color: white;
+}
+
+.contdasmaterias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+}
+
+.terceiraparte {
+  display: flex;
+}
